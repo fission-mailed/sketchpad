@@ -1,9 +1,21 @@
+#header {
+	display: flex;
+	position: relative;
+	margin: 0 auto;
+	width: 200px;
+	height: 40px;
+}
+
 .container {
-	margin: 10px auto;
+	margin: 0 auto;
 	padding: 0;
 	width: 640px;
 	height: 640px;
 	border: none;
+}
+
+button {
+	margin: auto;
 }
 
 .grid {

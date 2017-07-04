@@ -14,7 +14,6 @@ $(document).ready(function() {
 	
 	var boxWidth = Math.round(pageWidth / x) - 1;
 	var boxHeight = Math.round(pageHeight / y) - 1;
-	console.log(boxWidth);
 	
 	$('.grid').css("width", boxWidth);
 	$('.grid').css('height', boxHeight);
@@ -24,5 +23,9 @@ $(document).ready(function() {
 	});
 	$('.grid').on('click', function() {
 		$(this).removeClass('entered');
+	});
+	
+	$('.clear').on('click', function(){
+		$('.container').find('.grid').removeClass('entered');
 	});
 });
