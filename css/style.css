@@ -2,7 +2,7 @@
 	display: flex;
 	position: relative;
 	margin: 0 auto;
-	width: 200px;
+	width: 400px;
 	height: 40px;
 }
 
@@ -30,4 +30,16 @@ button {
 
 .entered {
 	background-color: #00a;
+}
+
+form {
+	display: none;
+	position: relative;
+	float: right;
+	margin-right: 160px;
+}
+
+
+form input {
+	margin-bottom: 7px;
 }
