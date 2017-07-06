@@ -1,3 +1,7 @@
+body {
+	line-height: 0;
+}
+
 #header {
 	display: flex;
 	position: relative;
@@ -19,7 +23,7 @@ button {
 }
 
 .grid {
-	border: 1px solid #000;
+	border: 1px solid #bbb;
 	background-color: #fff;
 	margin: 0;
 	padding: 0;
@@ -37,6 +41,7 @@ form {
 	position: relative;
 	float: right;
 	margin-right: 160px;
+	line-height: 1;
 }
 
 
