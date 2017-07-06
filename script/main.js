@@ -5,11 +5,12 @@ $(document).ready(function() {
 	
 	function createGrid(x,y){
 		
-		for(i = 1; i <= x; i++){
-			for(j = 1; j <= y; j++){
+		for(i = 1; i <= y; i++){
+			for(j = 1; j <= x; j++){
 				var div = $('<div class="grid"></div>');
 				div.appendTo('.container');
-			};	
+			};
+			$('<br>').appendTo('.container');
 		};
 		// This needs improving to accurately render correct dimensions
 		var pageWidth = 640 - 3*x;
@@ -41,10 +42,10 @@ $(document).ready(function() {
 	});
 	
 	// Allows user to alter dimensions of the grid
-	$('form').submit(function(e){
+	$('form').submit(function(event){
 		
 		// Prevent form from refreshing page
-		e.preventDefault();
+		event.preventDefault();
 		
 		// Deletes previous grid
 		$('.container').find('.grid').remove();
