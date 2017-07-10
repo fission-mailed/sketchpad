@@ -10,24 +10,27 @@
 </head>
 
 <body>
+
 	<div id="header">
 		<input type="button" class="clear" value="Clear the grid">
-		<input type="button" class="size" value="Change gride size">
-		<span>Mode: </span>
-		<span>Normal</span><input class="radio" type="radio" name="mode" value="normal" checked>
-		<span>Rainbow</span><input class="radio" type="radio" name="mode" value="rainbow">
-		<span>Gradient</span><input class="radio" type="radio" name="mode" value="gradient">
-	</div>
-	<form>
-	
-		<p>Number of columns:</p>
-		<input type="text" name="columns" value="16"><br>
-		<p>Number of rows:</p>
-		<input type="text" name="rows" value="16"><br>
-		<input type="submit" value="Submit">
+		<input type="button" class="size" value="Change pen size">
 		
-	</form>
+		<form id="myForm">
+			Select pen size (1-40):
+			<input id='textBox' type="text" name="squaresize" autocomplete="off" value="16">
+			<input id="submit" type="submit" value="Submit">
+		</form>
+		
+		<span>Mode: </span>
+		<span>Normal</span><input id="normal" class="radio" type="radio" name="mode" value="normal" checked>
+		<span>Rainbow</span><input id="rainbow" class="radio" type="radio" name="mode" value="rainbow">
+		<span>Gradient</span><input id="gradient" class="radio" type="radio" name="mode" value="gradient">
+	
+		
+	</div>
+	
 	<div class="container"></div>
+	
 </body>
 
 </html>
